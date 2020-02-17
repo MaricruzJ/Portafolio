@@ -200,12 +200,17 @@ footer li{
 }
 
 @media (max-width: 768px){
+    .start, .about-me, .projects, .skills{
+        min-height: auto;
+        padding-top: 64px;
+    }
+
     .presentation-card{
         padding: 0px;
     }
     .greeting{
         padding-top: 0px;
-        font-size: 50px;
+        font-size: 36px;
         color: #000000;
         line-height: 90px;
     }
