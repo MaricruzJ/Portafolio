@@ -13,33 +13,40 @@
 </head>
 
 <body>
-    <header class="navbar-fixed">
-        <nav class="nav-extended">
+    <header class="navbar-fixed transparent">
+        <nav class="nav-extended transparent">
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-            <ul class="right tabs tabs-transparent hide-on-med-and-down">
+            <ul class="right tabs c-gray hide-on-med-and-down transparent">
                 <a href="#start" class="active">
-                    <li class="tab"> Inicio</li>
+                    <li class="tab c-gray transparent"> Inicio</li>
                 </a>
                 <a href="#about-me">
-                    <li class="tab">Sobre mí</li>
+                    <li class="tab c-gray transparent">Sobre mí</li>
                 </a>
                 <a href="#projects">
-                    <li class="tab">Proyectos</li>
+                    <li class="tab c-gray transparent">Proyectos</li>
                 </a>
                 <a href="#skills">
-                    <li class="tab">Habilidades</li>
+                    <li class="tab c-gray transparent">Habilidades</li>
                 </a>
                 <a href="#contact">
-                    <li class="tab">Contacto</li>
+                    <li class="tab c-gray transparent">Contacto</li>
                 </a>
             </ul>
         </nav>
     </header>
     <ul id="mobile-demo" class="sidenav">
-        <li><a href="#!"><i class="material-icons">face</i></a></li>
-        <li><a href="#!">Maricruz J. Enrique Rivera</a></li>
-        <li><a href="#!">maricruz.enriquerivera@gmail.com</a></li>
-        <div class="divider"></div>
+        <li>
+            <div class="user-view">
+                <div class="background">
+                    <img src="Image/hola.jpg">
+                </div>
+                <a href="#user"><img class="circle" src="Image/menu-photo2.jpg"></a>
+                <a href="#name"><span class="white-text name">Maricruz J.</span></a>
+                <a href="#email"><span class="white-text email">maricruz.enriquerivera@gmail.com</span></a>
+            </div>
+        </li>
+        <!-- <div class="divider"></div> -->
         <li><a class="waves-effect" href="#start">Inicio</a></li>
         <li><a class="waves-effect" href="#about-me">Sobre mi</a></li>
         <li><a class="waves-effect" href="#projects">Proyectos</a></li>
@@ -48,219 +55,218 @@
     </ul>
     <main>
         <!-- Principal -->
-        <div id="start" class="start container">
+        <div id="start" class="start">
             <div class="presentation-card">
                 <p class="greeting">Maricruz J. <br>Enrique Rivera</p>
-                <div class="slogan">Front-end Developer</div>
-               
+                <p class="slogan">Front-end Developer</p>
+                <a class="waves-effect" href="#projects"><button class="btn waves-effect waves-light" type="submit"
+                        name="action">Ver proyectos</button></a>
+                <a target="_blank" class="waves-effect"
+                    href="https://docs.google.com/document/d/1pQBl2fAPhJ3c0_50Oo59NcniHLGONa19OJRYLwcKKIk/edit?usp=sharing"><button
+                        class="btn waves-effect waves-light transparent show-cv" type="submit" name="action">Ver CV
+                    </button></a>
             </div>
-            <!-- Sobre mi -->
-            <div id="about-me" class="about-me">
-                <p class="title-1">Sobre mí</p>
-                <div class="content-information">
-                    <p class="personal-information">Soy bachiller de la carrera de Ingeniería de Sistemas y Front-end
-                        developer. Motivada y
-                        capacitada para aplicar los conocimientos y habilidades que he ido adquiriendo durante mi
-                        formación
-                        académica. Tengo
-                        como objetivo crecer profesionalmente y a su vez contribuir al logro de los objetivos de la
-                        organización.
-                    </p>
-                </div>
+        </div>
+        <!-- Sobre mi -->
+        <div id="about-me" class="about-me container">
+            <p class="title-1">Sobre mí</p>
+            <div class="content-information">
+                <p class="personal-information">Soy bachiller de la carrera de Ingeniería de Sistemas y Front-end
+                    developer. Motivada y
+                    capacitada para aplicar los conocimientos y habilidades que he ido adquiriendo durante mi
+                    formación
+                    académica. Tengo
+                    como objetivo crecer profesionalmente y a su vez contribuir al logro de los objetivos de la
+                    organización.
+                </p>
             </div>
-            <!-- Portafolio -->
-            <div id="projects" class="projects">
-                <p class="title-1">Mis Proyectos</p>
-                <div class="content-projects">
-                    <div class="row">
-                        <div class="col s12 m6 l4">
-                            <div class="card large">
-                                <div class="card-image">
-                                    <img src="./Image/project-one.png">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title">AKLLA</span>
-                                    <p class="justify-text">Es una red social orientado tanto a los productores de
-                                        artesanías como a los
-                                        compradores. Tiene la opción de realizarun post público o privado, comentar
-                                        algun
-                                        post o darle like.
+        </div>
+        <!-- Portafolio -->
+        <div id="projects" class="projects container">
+            <p class="title-1">Mis Proyectos</p>
+            <div class="content-projects">
+                <div class="row">
+                    <div class="col s12 m6 l4">
+                        <div class="card large">
+                            <div class="card-image">
+                                <img src="./Image/project-one.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">AKLLA</span>
+                                <p class="justify-text">Es una red social orientado tanto a los productores de
+                                    artesanías como a los
+                                    compradores. Tiene la opción de realizarun post público o privado, comentar
+                                    algun
+                                    post o darle like.
 
-                                    </p>
-                                </div>
-                                <div class="card-action valign-wrapper">
-                                    <a target="_blank" href="https://github.com/MaricruzJ/LIM011-fe-social-network">Ver
-                                        código</a>
-                                    <a target="_blank"
-                                        href="https://maricruzj.github.io/LIM011-fe-social-network/src/">Ver
-                                        demo</a>
-                                    <span class="activator" href="#"><i
-                                            class="material-icons right">more_vert</i></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Reto:<i
-                                            class="material-icons right">close</i></span>
-                                    <p class="justify-text">Aprender e implementar Fiestore para el almacenamiento de
-                                        los post, comentarios y
-                                        likes. Mejorar las habilidades de trabajo en equipo y aplicación de la
-                                        metodología
-                                        agil.
-                                    </p>
-                                </div>
+                                </p>
+                            </div>
+                            <div class="card-action valign-wrapper">
+                                <a target="_blank" href="https://github.com/MaricruzJ/LIM011-fe-social-network">Ver
+                                    código</a>
+                                <a target="_blank" href="https://maricruzj.github.io/LIM011-fe-social-network/src/">Ver
+                                    demo</a>
+                                <span class="activator" href="#"><i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Reto:<i
+                                        class="material-icons right">close</i></span>
+                                <p class="justify-text">Aprender e implementar Fiestore para el almacenamiento de
+                                    los post, comentarios y
+                                    likes. Mejorar las habilidades de trabajo en equipo y aplicación de la
+                                    metodología
+                                    agil.
+                                </p>
                             </div>
                         </div>
-                        <div class="col s12 m6 l4">
-                            <div class="card large">
-                                <div class="card-image">
-                                    <img src="./Image/project-two.png">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title">MD-LINKS</span>
-                                    <p class="justify-text">Es una librería que nos permitía validar si los links
-                                        contenidos en un archivo de
-                                        formato markdown funcionan o no. Para este proyecto se usó JavaScript, Jest para
-                                        los
-                                        test unitarios y Node.js principalmente</p>
-                                </div>
-                                <div class="card-action valign-wrapper">
-                                    <a target="_blank" href="https://github.com/MaricruzJ/LIM011-fe-md-links">Ver
-                                        código</a>
-                                    <a target="_blank" href="https://github.com/MaricruzJ/LIM011-fe-md-links">Ver
-                                        demo</a>
-                                    <span class="activator" href="#"><i
-                                            class="material-icons right">more_vert</i></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Reto:<i
-                                            class="material-icons right">close</i></span>
-                                    <p class="justify-text"> Aprender sobre NodeJs e implementarlo. Tests unitarios de
-                                        promesas y consultas
-                                        HTTP.
-                                        Mejora de las habilidades blandas como organización y manejo de tiempos.
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card large">
+                            <div class="card-image">
+                                <img src="./Image/project-two.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">MD-LINKS</span>
+                                <p class="justify-text">Es una librería que nos permitía validar si los links
+                                    contenidos en un archivo de
+                                    formato markdown funcionan o no. Para este proyecto se usó JavaScript, Jest para
+                                    los
+                                    test unitarios y Node.js principalmente</p>
+                            </div>
+                            <div class="card-action valign-wrapper">
+                                <a target="_blank" href="https://github.com/MaricruzJ/LIM011-fe-md-links">Ver
+                                    código</a>
+                                <a target="_blank" href="https://github.com/MaricruzJ/LIM011-fe-md-links">Ver
+                                    demo</a>
+                                <span class="activator" href="#"><i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Reto:<i
+                                        class="material-icons right">close</i></span>
+                                <p class="justify-text"> Aprender sobre NodeJs e implementarlo. Tests unitarios de
+                                    promesas y consultas
+                                    HTTP.
+                                    Mejora de las habilidades blandas como organización y manejo de tiempos.
+                                </p>
                             </div>
                         </div>
-                        <div class="col s12 m6 l4">
-                            <div class="card large">
-                                <div class="card-image">
-                                    <img src="./Image/project-one.png">
-                                </div>
-                                <div class="card-content">
-                                    <span class="card-title">CLINICA DENTAL OH</span>
-                                    <p class="justify-text">Web para dar a conocer los servicios que brinda la clínica.
-                                        Mejorar la
-                                        experiencia
-                                        del usuario. Cuenta con 6 modulos: Inicio, Tratamientos, Promociones,
-                                        Testimonios,
-                                        Blog y la sección de Contacto.</p>
-                                </div>
-                                <div class="card-action valign-wrapper">
-                                    <a target="_blank" href="https://github.com/MaricruzJ/oral-health">Ver
-                                        código</a>
-                                    <a target="_blank" href="http://maricruzj.github.io/oral-health/">Ver demo</a>
-                                    <span class="activator" href="#"><i
-                                            class="material-icons right">more_vert</i></span>
-                                </div>
-                                <div class="card-reveal">
-                                    <span class="card-title grey-text text-darken-4">Reto:<i
-                                            class="material-icons right">close</i></span>
-                                    <p class="justify-text">Aprender a implementar Angular 8, uso de saas para los
-                                        estilos de la web,
-                                        implementación de mapa en el módulo de contacto.
-                                    </p>
-                                </div>
+                    </div>
+                    <div class="col s12 m6 l4">
+                        <div class="card large">
+                            <div class="card-image">
+                                <img src="./Image/project-one.png">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">CLINICA DENTAL OH</span>
+                                <p class="justify-text">Web para dar a conocer los servicios que brinda la clínica.
+                                    Mejorar la
+                                    experiencia
+                                    del usuario. Cuenta con 6 modulos: Inicio, Tratamientos, Promociones,
+                                    Testimonios,
+                                    Blog y la sección de Contacto.</p>
+                            </div>
+                            <div class="card-action valign-wrapper">
+                                <a target="_blank" href="https://github.com/MaricruzJ/oral-health">Ver
+                                    código</a>
+                                <a target="_blank" href="http://maricruzj.github.io/oral-health/">Ver demo</a>
+                                <span class="activator" href="#"><i class="material-icons right">more_vert</i></span>
+                            </div>
+                            <div class="card-reveal">
+                                <span class="card-title grey-text text-darken-4">Reto:<i
+                                        class="material-icons right">close</i></span>
+                                <p class="justify-text">Aprender a implementar Angular 8, uso de saas para los
+                                    estilos de la web,
+                                    implementación de mapa en el módulo de contacto.
+                                </p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Skills -->
-            <div id="skills" class="skills">
-                <p class="title-1">Habilidades</p>
-                <div class="content-skills">
-                    <div class="skill-tech">
-                        <p class="title-2">Habilidades Técnicas</p>
-                        <div class="content-icon-tech">
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-javascript.png" alt="JavaScript"
-                                        class="img-skill" title="JavaScript"></div><span>JavaScript</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-html5.png" alt="HTML5" class="img-skill"
-                                        title="HTML5"></div><span>HTML5</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-css.png" alt="CSS3" class="img-skill"
-                                        title="CSS3">
-                                </div><span>CSS3</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-firebase.png" alt="Firebase" class="img-skill"
-                                        title="Firebase"></div><span>Firebase</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-nodejs.png" alt="Node.js" class="img-skill"
-                                        title="Node.js"></div><span>Node.js</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-npm.png" alt="npm" class="img-skill"
-                                        title="npm">
-                                </div><span>npm</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-github.png" alt="GitHub" class="img-skill"
-                                        title="GitHub"></div><span>GitHub</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-git.png" alt="Git" class="img-skill"
-                                        title="Git">
-                                </div><span>Git</span>
-                            </div>
-                            <div class="icon-description-tech">
-                                <div class="icon"><img src="./Image/icon-scrum.png" alt="Scrum" class="img-skill"
-                                        title="Metodología Agil"></div><span>Metodología <br>ágil</span>
-                            </div>
+        </div>
+        <!-- Skills -->
+        <div id="skills" class="skills container">
+            <p class="title-1">Habilidades</p>
+            <div class="content-skills">
+                <div class="skill-tech">
+                    <p class="title-2">Habilidades Técnicas</p>
+                    <div class="content-icon-tech">
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-javascript.png" alt="JavaScript" class="img-skill"
+                                    title="JavaScript"></div><span>JavaScript</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-html5.png" alt="HTML5" class="img-skill"
+                                    title="HTML5"></div><span>HTML5</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-css.png" alt="CSS3" class="img-skill" title="CSS3">
+                            </div><span>CSS3</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-firebase.png" alt="Firebase" class="img-skill"
+                                    title="Firebase"></div><span>Firebase</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-nodejs.png" alt="Node.js" class="img-skill"
+                                    title="Node.js"></div><span>Node.js</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-npm.png" alt="npm" class="img-skill" title="npm">
+                            </div><span>npm</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-github.png" alt="GitHub" class="img-skill"
+                                    title="GitHub"></div><span>GitHub</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-git.png" alt="Git" class="img-skill" title="Git">
+                            </div><span>Git</span>
+                        </div>
+                        <div class="icon-description-tech">
+                            <div class="icon"><img src="./Image/icon-scrum.png" alt="Scrum" class="img-skill"
+                                    title="Metodología Agil"></div><span>Metodología <br>ágil</span>
                         </div>
                     </div>
-                    <div class="skill-soft">
-                        <p class="title-2">Habilidades Blandas</p>
-                        <div class="content-icon-social">
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-workteam.png" alt="HTML5" class="img-skill"
-                                        title="Trabajo en equipo"></div><span>Trabajo <br>en equipo</span>
-                            </div>
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-hand.png" alt="HTML5" class="img-skill"
-                                        title="Manejo de emociones"></div><span>Manejo de<br> emociones</span>
-                            </div>
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-calendar.png" alt="HTML5" class="img-skill"
-                                        title="Manejo de Tiempos"></div><span>Manejo de<br> tiempos</span>
-                            </div>
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-self-learning.png" alt="HTML5"
-                                        class="img-skill" title="Autoaprendizaje"></div><span>Autoaprendizaje</span>
-                            </div>
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-adaptability.png" alt="HTML5" class="img-skill"
-                                        title="Adaptabilidad"></div><span>Adaptabilidad</span>
-                            </div>
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-planning.png" alt="HTML5" class="img-skill"
-                                        title="Planificación"></div><span>Planificación</span>
-                            </div>
-                            <div class="icon-description-soft">
-                                <div class="icon"><img src="./Image/icon-leader.png" alt="HTML5" class="img-skill"
-                                        title="Liderazgo"></div><span>Liderazgo</span>
-                            </div>
+                </div>
+                <div class="skill-soft">
+                    <p class="title-2">Habilidades Blandas</p>
+                    <div class="content-icon-social">
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-workteam.png" alt="HTML5" class="img-skill"
+                                    title="Trabajo en equipo"></div><span>Trabajo <br>en equipo</span>
+                        </div>
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-hand.png" alt="HTML5" class="img-skill"
+                                    title="Manejo de emociones"></div><span>Manejo de<br> emociones</span>
+                        </div>
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-calendar.png" alt="HTML5" class="img-skill"
+                                    title="Manejo de Tiempos"></div><span>Manejo de<br> tiempos</span>
+                        </div>
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-self-learning.png" alt="HTML5" class="img-skill"
+                                    title="Autoaprendizaje"></div><span>Autoaprendizaje</span>
+                        </div>
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-adaptability.png" alt="HTML5" class="img-skill"
+                                    title="Adaptabilidad"></div><span>Adaptabilidad</span>
+                        </div>
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-planning.png" alt="HTML5" class="img-skill"
+                                    title="Planificación"></div><span>Planificación</span>
+                        </div>
+                        <div class="icon-description-soft">
+                            <div class="icon"><img src="./Image/icon-leader.png" alt="HTML5" class="img-skill"
+                                    title="Liderazgo"></div><span>Liderazgo</span>
                         </div>
                     </div>
                 </div>
             </div>
+
     </main>
     <!-- Contacto -->
-    <footer id="contact" class="page-footer">
+    <footer id="contact" class="page-footer black">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -280,7 +286,7 @@
                     <h5 class="white-text">Links</h5>
                     <ul>
                         <li><a target="_blank" class="grey-text text-lighten-3 valign-wrapper"
-                                href="https://drive.google.com/file/d/1cjBhiIr-2Eo1xIjmbTHygPlIfK1vz3M2/view?usp=sharing">
+                                href="https://docs.google.com/document/d/1pQBl2fAPhJ3c0_50Oo59NcniHLGONa19OJRYLwcKKIk/edit?usp=sharing">
                                 <i class="material-icons md-48 grey-text text-lighten-3">description</i> Ver
                                 CV</a>
                         </li>
