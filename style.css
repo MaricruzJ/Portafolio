@@ -223,20 +223,30 @@ footer li{
     text-decoration: none;
 }
 
+
+
 @media (max-width: 768px){
+    .start{
+        height: 90vh;
+        padding-top: 64px;
+        min-height: 64vh;
+        background-image: url('./Image/bg-web-min1.jpg');
+        background-position-x: left;
+    }
     .presentation-card{
         padding: 0px;
     }
     .greeting{
         padding-top: 0px;
-        font-size: 50px;
-        color: #000000;
+        font-size: 30px;
+        color: #ffffff;
         line-height: 90px;
         margin: 0px;
     }
     
-    .slogan{    
-        font-size: 25px;
+    .slogan{  
+        color: #ffffff;  
+        font-size: 20px;
         line-height: 2px;    
     }
 
