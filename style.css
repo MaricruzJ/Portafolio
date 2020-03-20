@@ -58,6 +58,14 @@ a > img{
     margin-block-end: 0em;
 }
 
+.title-project-1{
+    text-align: center;   
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #090909;
+}
+
 .title-2{
     text-align: center;
     width: 100%;
@@ -153,9 +161,16 @@ header li:hover{
 .content-information{
     position: relative;
     width: 100%;
+    display: flex;
+}
+
+.personal-photo{
+    width: 40%;
+    height: 400px;
 }
 
 .personal-information{
+    width: 60%;
     padding: 30px 10px;
     height: auto;
     line-height: 40px;
@@ -232,6 +247,7 @@ footer li{
         min-height: 64vh;
         background-image: url('./Image/bg-web-min1.jpg');
         background-position-x: left;
+        background-repeat-x: no-repeat;
     }
     .presentation-card{
         padding: 0px;
