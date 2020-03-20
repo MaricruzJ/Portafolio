@@ -17,6 +17,11 @@ body{
     margin: 0;
 }
 
+.circle{
+    height: 100px !important;
+    width: 100px !important;
+}
+
 a > img{
     height: 35px;
     padding: 5px 5px 5px 0px;
@@ -53,6 +58,14 @@ a > img{
     margin-block-end: 0em;
 }
 
+.title-project-1{
+    text-align: center;   
+    width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #090909;
+}
+
 .title-2{
     text-align: center;
     width: 100%;
@@ -61,7 +74,16 @@ a > img{
     color: #090909;
 }
 
-.start, .about-me, .projects, .skills{
+.start{
+    height: 90vh;
+    padding-top: 64px;
+    min-height: 64vh;
+    background-image: url('./Image/bg-web-min1.jpg');
+    background-repeat: round;
+    background-position-x: left;
+}
+
+.about-me, .projects, .skills{
     min-height: 80vh;
     padding-top: 64px;
 }
@@ -70,15 +92,26 @@ a > img{
     text-align: justify;
 }
 
+.show-cv{
+    border: 1px solid rgb(255, 255, 255);
+    color: white;
+}
+
+.c-gray{
+    color: white;
+}
+
 /* HEADER */ 
 
 header{
     height: 64px !important;
+    /* background-color: black !important; */
 }
 
 .nav-extended{
     height: 100%;
     height: 64px !important;
+    background-color: black !important;
 }
 
 header ul{
@@ -86,11 +119,13 @@ header ul{
     align-content: space-around;
     justify-content: flex-end;
     height: 64px !important;
+    /* background-color: black !important; */
 }
 
 header li{
     height: 64px !important;
     line-height: 64px !important;
+    /* background-color: black !important; */
 }
 
 header a{
@@ -98,7 +133,7 @@ header a{
 }
 
 header li:hover{
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(224, 129, 190);
 } 
 
 /* PRINCIPAL  */
@@ -106,21 +141,19 @@ header li:hover{
 .presentation-card{
     height: auto;
     width: 100%;
-    padding: 40px 10px;
     position: relative;
     text-align: center;
 }
 
 .greeting{
-    padding-top: 20px;
-    font-size: 80px;
-    color: #000000;
-    line-height: 90px;
+    font-size: 60px;
+    color: #ffffff;
 }
 
 .slogan{    
     font-size: 25px;
-    line-height: 2px;    
+    line-height: 2px; 
+    color: #ffffff;   
 }
 
 /* SOBRE MI  */
@@ -128,9 +161,16 @@ header li:hover{
 .content-information{
     position: relative;
     width: 100%;
+    display: flex;
+}
+
+.personal-photo{
+    width: 40%;
+    height: 400px;
 }
 
 .personal-information{
+    width: 60%;
     padding: 30px 10px;
     height: auto;
     line-height: 40px;
@@ -198,24 +238,31 @@ footer li{
     text-decoration: none;
 }
 
-@media (max-width: 768px){
-    .start, .about-me, .projects, .skills{
-        min-height: auto;
-        padding-top: 64px;
-    }
 
+
+@media (max-width: 768px){
+    .start{
+        height: 90vh;
+        padding-top: 64px;
+        min-height: 64vh;
+        background-image: url('./Image/bg-web-min1.jpg');
+        background-position-x: left;
+        background-repeat-x: no-repeat;
+    }
     .presentation-card{
         padding: 0px;
     }
     .greeting{
         padding-top: 0px;
-        font-size: 36px;
-        color: #000000;
+        font-size: 30px;
+        color: #ffffff;
         line-height: 90px;
+        margin: 0px;
     }
     
-    .slogan{    
-        font-size: 25px;
+    .slogan{  
+        color: #ffffff;  
+        font-size: 20px;
         line-height: 2px;    
     }
 
