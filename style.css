@@ -20,7 +20,7 @@ body{
 }
 
 .user-view{
-    background-image: -webkit-linear-gradient(135deg,#91d1ff -30% , #a387ff 100%);
+    background-image: -webkit-linear-gradient(135deg, #464775 0%, #5683C0 100%);
 }
 
 .img-skill{
@@ -91,26 +91,27 @@ p, h1, h2{
 }
 
 .btn-projects{
-    border: 1px solid #91d1ff;
-    background-color: #91d1ff;
+    border: 1px solid #BF6DA3;
+    background-color: #BF6DA3;
+    color: white !important;
 }
 
 .btn-cv{
-    border: 1px solid #a387ff;
+    border: 1px solid #5A86BF;
     background-color: transparent;
     color: #333;
 }
 
 .btn-cv:hover{
-    background-color: #a387ff;
-    border: 1px solid #a387ff;
+    background-color: #5A86BF;
+    border: 1px solid #5A86BF;
     color: white;
 }
 
 .btn-projects:hover{
     color: white;
-    background-color: #44b1ff;
-    border: 1px solid #44b1ff;
+    background-color: #7e2f63;
+    border: 1px solid #BF6DA3;
 }
 
 .content-icon-tech, .content-icon-social{
@@ -121,7 +122,7 @@ nav, header, .contain-list{
     height: 80px !important;
     line-height: 80px;
     font-size: 20px !important;
-    background-image: -webkit-linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
+    background-image: -webkit-linear-gradient(135deg, #464775 0%, #5683C0 100%);
 }
 
 .about-me, .projects, .skills{
@@ -175,7 +176,7 @@ nav, header, .contain-list{
 }
 
 .page-footer{
-    background-image: -webkit-linear-gradient(135deg, #a387ff 0%, #91d1ff 100%);
+    background-image: -webkit-linear-gradient(135deg, #464775 0%, #5683C0 100%);
 }
 
 .picture {
@@ -210,6 +211,23 @@ nav, header, .contain-list{
 
 .footer-copyright {
     margin-bottom: 0;
+}
+
+.card .card-action a{
+    margin-right: 4px !important; 
+    height: 36px;
+    width: 100%;
+    color: white !important;
+    border-radius: 2px;
+    padding: 7px 0px;
+}
+
+.bg-sky{
+    background-color: #5A86BF;
+}
+
+.bg-blue{
+    background-color: #BF6DA3;
 }
 
 
