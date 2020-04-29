@@ -209,6 +209,10 @@ nav, header, .contain-list{
     margin-top: 30px;
 }
 
+.content-information div{
+    text-align: center;
+}
+
 .footer-copyright {
     margin-bottom: 0;
 }
