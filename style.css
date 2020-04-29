@@ -192,6 +192,10 @@ nav, header, .contain-list{
     opacity: 0.6;
 }
 
+.sidenav-trigger i{
+    line-height: 78px !important;
+}
+
 .sidenav-overlay{
     z-index: 996;
 }
